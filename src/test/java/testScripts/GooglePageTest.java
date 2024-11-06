@@ -35,7 +35,8 @@ public class GooglePageTest {
 		
 		WebElement searchBox = driver.findElement(By.tagName("textarea"));
 		searchBox.sendKeys("Java Tutorial");
-		searchBox.sendKeys(Keys.ENTER);
+//		searchBox.sendKeys(Keys.ENTER);
+		searchBox.submit();
 		System.out.println("Page Title : " + driver.getTitle());
 		
 		driver.navigate().back();
