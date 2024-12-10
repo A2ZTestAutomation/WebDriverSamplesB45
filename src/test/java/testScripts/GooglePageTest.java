@@ -27,13 +27,8 @@ public class GooglePageTest {
 		driver.manage().window().maximize();
 		
 		driver.get("https://www.google.com/");
-//		driver.navigate().to("https://www.google.com/");
-		
-//		WebElement searchBox = driver.findElement(By.id("APjFqb"));
-//		WebElement searchBox = driver.findElement(By.name("q"));
-//		WebElement searchBox = driver.findElement(By.className("gLFyf"));
-		
-		WebElement searchBox = driver.findElement(By.tagName("textarea"));
+		WebElement searchBox = driver.findElement(By.name("q"));
+	
 		searchBox.sendKeys("Java Tutorial");
 //		searchBox.sendKeys(Keys.ENTER);
 		searchBox.submit();

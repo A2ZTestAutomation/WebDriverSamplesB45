@@ -23,6 +23,10 @@ public class WebTableTest {
 			
 		}
 		
+		WebElement table = driver.findElement(
+				By.xpath("//td[contains(text(), 'Smartphone')]//ancestor::table"));
+		System.out.println("Table name ....."+ table.getAttribute("id"));
+		
 		
   }
 }

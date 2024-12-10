@@ -12,7 +12,7 @@ public class RadioChkBoxTest {
 		driver.manage().window().maximize();
 		driver.get("https://the-internet.herokuapp.com/checkboxes");
 //		driver.findElement(By.id("gender-radio-1")).click();
-		Thread.sleep(2000);
+//		Thread.sleep(10000);
 		driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
 		boolean isSel = driver.findElement(
 				By.xpath("(//input[@type='checkbox'])[2]")).isSelected();
